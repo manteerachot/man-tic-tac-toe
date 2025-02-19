@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกม Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <!-- วิดีโอพื้นหลัง -->
+      <video autoplay muted loop id="bg-video">
+        <source src="./video/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Overlay สำหรับความเข้ม -->
+    <div id="bg-overlay"></div>
+
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <p class="game-status" id="status">Turn: X</p>
+        <div class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="resetBtn" class="reset-btn">Reset Game</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mr. Teerachot Sompong | No.43 IT4102</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
